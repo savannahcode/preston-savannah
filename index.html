@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Preston & Savannah's Wedding Website" />
+    <meta name="author" content="Savannah Hilton" />
+
+    <title>Preston & Savannah</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <!-- STYLE SHEETS -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- HEADER HERE -->
+    <div class="navAndHeader">
+      <header>
+        <div class="coupleHeader">
+          <a href="#">
+            <h1>Preston &</h1>
+            <h1>Savannah</h1>
+          </a>
+        </div>
+        <p onclick="openNav()" class="menuText">MENU</p>
+      </header>
+
+      <!-- NAVIGATION HERE -->
+      <nav class="clearfix overlay" id="myNav">
+        <a href="javascript:void(0)" id="closeIcon" onclick="closeNav()"
+          >&times;</a
+        >
+
+        <!-- Overlay content -->
+        <ul class="menu">
+          <li><a href="ourStory.html" onclick="closeNav()">Our Story</a></li>
+          <li><a href="registry.html" onclick="closeNav()">Registry</a></li>
+          <li>
+            <a href="itinerary.html" onclick="closeNav()">Itinerary</a>
+          </li>
+          <li><a href="photos.html" onclick="closeNav()">Photos</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- CONTENT HERE -->
+    <main>
+      <h1>PRESTON & SAVANNAH</h1>
+      <h1>11.17.2023</h1>
+    </main>
+
+    <!-- FOOTER HERE -->
+    <footer>&copy; 2023 &bull; weddingcode.co &bull;</footer>
+    <!--SCRIPTS HERE-->
+    <script src="js/scripts.js"></script>
+    <script
+      src="https://kit.fontawesome.com/77eefe8645.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

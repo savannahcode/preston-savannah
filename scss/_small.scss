@@ -1,0 +1,146 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/* FONTS */
+// https://fonts.adobe.com/fonts/adobe-kannada#about-section
+@import url("https://use.typekit.net/rxx0kri.css");
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; 
+    color:#252525;
+    font-family: "adobe-kannada", 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/*----------- BODY --------------*/
+body {
+    background-color: #F5F0EC;
+    overflow-x: hidden;
+    font-size: 1rem;
+    font-family: Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/Savannah+Preston_happy.jpg");
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    
+    .menuText{
+        font-size: 2.5rem;
+        text-decoration: underline;
+        text-underline-offset: .2em;
+        margin: .5em .5em 0 0;
+    }
+    .coupleHeader{
+        /* top right bottom left*/
+        margin: 1rem 0 0 1rem;
+
+        a{
+            text-decoration: none;
+       }
+        
+        h1{
+            margin: 0;
+        }
+    }
+}
+
+/*----------- NAVIGATION --------------*/
+      
+    /* The Overlay (background) using https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  /* Position the content inside the overlay */
+  nav .menu {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    background-color: transparent; /* Make the menu content background transparent */
+    li {
+        list-style-type: none;
+        text-decoration: none;
+        background-color: transparent;
+    }
+}
+
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: .5em;
+    text-decoration: none;
+    font-size: 2.25rem;
+    //color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+    background-color: transparent;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover,
+  .overlay a:focus {
+    //color: #818181;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay #closeIcon {
+    position: absolute;
+    right: .03em;
+    font-size: 3.75rem;
+  }
+  
+  /* Add this to your CSS */
+  .overlay.show-nav {
+    width: 100%;
+  }
+
+  #myNav li.active a {
+    //color: #929292;
+  }
+  #myNav{
+    background-color: #f5f0ecde;
+  }
+  
+  
+
+
+/*----------- MAIN --------------*/
+main {
+h1{
+    font-size: 3.75rem;
+}
+}
+
+
+
+/*----------- FOOTER --------------*/
+footer {
+    padding: .5rem 2%;
+    text-align: center;
+    font-size: .7rem;
+    margin-top: auto;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

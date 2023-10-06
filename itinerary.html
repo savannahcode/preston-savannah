@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Ben & Daphne's Wedding Itinerary" />
+    <meta name="author" content="Savannah Hilton" />
+
+    <title>Ben & Daphne: Itinerary</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <!-- STYLE SHEETS -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- HEADER HERE -->
+    <div class="navAndHeader">
+      <header>
+        
+          <div class="daphBen">
+            <a href="index.html">
+            <h1>Ben &</h1>
+            <h1>Daphne</h1>
+            </a>
+          </div>
+        </a>
+        <p onclick="openNav()" class="menuText">MENU</p>
+      </header>
+
+      <!-- NAVIGATION HERE -->
+      <nav class="clearfix overlay" id="myNav">
+        <a href="javascript:void(0)" id="closeIcon" onclick="closeNav()"
+          >&times;</a
+        >
+
+        <!-- Overlay content -->
+        <ul class="menu">
+          <li><a href="ourStory.html" onclick="closeNav()">Our Story</a></li>
+          <li><a href="registry.html" onclick="closeNav()">Registry</a></li>
+          <li>
+            <a href="#" onclick="closeNav()">Itinerary</a>
+          </li>
+          <li><a href="photos.html" onclick="closeNav()">Photos</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- CONTENT HERE -->
+    <main>
+      <h1>Itinerary</h1>
+      <div>
+        <h2>Temple Sealing</h2>
+        <h3>LOCATION:</h3>
+        <h4>Draper Temple
+            14065 Canyon Vista Ln, Draper, UT 84020</h4>
+        <h3>DATE:</h3>
+        <h4>November 17th, 2023</h4>
+        <h3>TIME:</h3>
+        <h4>6:30 PM - 9 PM</h4>
+    </div>
+    <div>
+        <h2>Reception</h2>
+        <h3>LOCATION:</h3>
+        <h4>Alpine Arts Center
+            450 South Alpine Hwy #100, Alpine, UT 84004</h4>
+        <h3>DATE:</h3>
+        <h4>November 17th, 2023</h4>
+        <h3>TIME:</h3>
+        <h4>12 PM</h4>
+    </div>
+        <button>RSVP</button>
+        <button>REQUEST AN INVITATION</button>
+    </main>
+  
+    <!-- FOOTER HERE -->
+    <footer>&copy; 2023 &bull; weddingcode.co &bull;</footer>
+    <!--SCRIPTS HERE-->
+    <script src="js/scripts.js"></script>
+    <script
+      src="https://kit.fontawesome.com/77eefe8645.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

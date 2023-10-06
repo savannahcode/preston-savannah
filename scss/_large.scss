@@ -1,0 +1,81 @@
+/* header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+} */
+
+/*----------- BODY --------------*/
+
+
+.navAndHeader{
+    display: flex;
+    justify-content: space-between;
+}
+/*----------- HEADER --------------*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      width: 10.5em;
+      height: auto;
+    }
+    .menuText {
+      display: none;
+    }
+  }
+
+
+/*----------- NAVIGATION --------------*/
+nav {
+    
+    #myNav {
+      height: auto;
+      width: 100%; /* Reset width for larger viewports */
+      display: flex;
+      align-items: center; /* Add this line */
+    }
+    #closeIcon {
+      display: none;
+    }
+    .menu {
+      display: flex;
+      justify-content: flex-end;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      li {
+        /* top right bottom left*/
+        margin: 0 1.2em 0;
+        a {
+          //color: #eee;
+          text-decoration: none;
+          font-size: 2.25rem;
+          text-align: center;
+          padding-bottom: 0;
+          margin-bottom: 1em;
+        }
+      }
+      li a:hover {
+        //background-color: #eee;
+        //color: #333;
+      }
+      
+    }
+  }
+  .overlay{
+    position: relative;
+    width: auto;
+    overflow-x: auto;
+    margin-top: .5em;
+    }
+
+/*----------- MAIN --------------*/
+main{
+
+}
+
+
+/*----------- FOOTER --------------*/
+footer{
+    margin-top: 1.7em;
+}
