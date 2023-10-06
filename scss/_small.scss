@@ -8,8 +8,12 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * {
     -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; 
-    color:#252525;
+    color:#ebebeb;
     font-family: "adobe-kannada", 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    html {
+      min-height:100%;
+      background-size:cover;
+    }
 }
 
 
@@ -23,6 +27,9 @@ body {
     display: flex;
     flex-direction: column;
     background-image: url("../images/Savannah+Preston_happy.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -113,7 +120,7 @@ header {
     //color: #929292;
   }
   #myNav{
-    background-color: #f5f0ecde;
+    color: rgba(0, 0, 0, 0.528);
   }
   
   
