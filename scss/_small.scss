@@ -2,14 +2,15 @@
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /* FONTS */
-// https://fonts.adobe.com/fonts/adobe-kannada#about-section
-@import url("https://use.typekit.net/rxx0kri.css");
-
+@font-face {
+  font-family: "KhmerMN";
+  src: url(../fonts/khmer-mn.ttf);
+}
 /*----------- apply a natural box layout model to all elements --------------*/
 * {
     -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; 
     color:#ebebeb;
-    font-family: "adobe-kannada", 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "KhmerMN", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     html {
       min-height:100%;
       background-size:cover;
@@ -26,7 +27,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url("../images/Savannah+Preston_happy.jpg");
+    background-image: url("../images/mtnKissHeroPhone.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -44,18 +45,12 @@ header {
         text-underline-offset: .2em;
         margin: .5em .5em 0 0;
     }
-    .coupleHeader{
-        /* top right bottom left*/
-        margin: 1rem 0 0 1rem;
-
-        a{
-            text-decoration: none;
-       }
-        
-        h1{
-            margin: 0;
-        }
-    }
+    .wcLogo{
+      /* top | right | bottom | left */
+      margin: 1rem 0 0 1rem;
+      height: 105px;
+      width: auto;
+  }
 }
 
 /*----------- NAVIGATION --------------*/
@@ -74,6 +69,7 @@ header {
   
   /* Position the content inside the overlay */
   nav .menu {
+    padding-left: 0;
     position: relative;
     top: 25%;
     width: 100%;
@@ -110,7 +106,9 @@ header {
     right: .03em;
     font-size: 3.75rem;
   }
-  
+  .overlay{
+    background-color: #000000c9;
+  }
   /* Add this to your CSS */
   .overlay.show-nav {
     width: 100%;
@@ -130,6 +128,16 @@ header {
 main {
 h1{
     font-size: 3.75rem;
+}
+.verticalDate{
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+  letter-spacing: -2rem;
+}
+.verticalYear{
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+  letter-spacing: -2rem;
 }
 }
 

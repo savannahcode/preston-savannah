@@ -4,7 +4,9 @@
 } */
 
 /*----------- BODY --------------*/
-
+body{
+  background-image: url("../images/mtnKissHero.jpg");
+}
 
 .navAndHeader{
     display: flex;
@@ -26,14 +28,16 @@ header {
 
 
 /*----------- NAVIGATION --------------*/
+#myNav {
+  background-color: transparent;
+  height: 5rem;
+  width: 100%; /* Reset width for larger viewports */
+  display: flex;
+  align-items: center; /* Add this line */
+}
+
 nav {
     
-    #myNav {
-      height: auto;
-      width: 100%; /* Reset width for larger viewports */
-      display: flex;
-      align-items: center; /* Add this line */
-    }
     #closeIcon {
       display: none;
     }

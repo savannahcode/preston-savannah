@@ -5,7 +5,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://use.typekit.net/rxx0kri.css");
 html {
   line-height: 1.15;
   /* 1 */
@@ -310,13 +309,16 @@ html {
   -ms-text-size-adjust: 100%; }
 
 /* FONTS */
+@font-face {
+  font-family: "KhmerMN";
+  src: url(../fonts/khmer-mn.ttf); }
 /*----------- apply a natural box layout model to all elements --------------*/
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #ebebeb;
-  font-family: "adobe-kannada", 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+  font-family: "KhmerMN", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
   * html {
     min-height: 100%;
     background-size: cover; }
@@ -330,7 +332,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url("../images/Savannah+Preston_happy.jpg");
+  background-image: url("../images/mtnKissHeroPhone.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
@@ -344,13 +346,11 @@ header {
     text-decoration: underline;
     text-underline-offset: .2em;
     margin: .5em .5em 0 0; }
-  header .coupleHeader {
-    /* top right bottom left*/
-    margin: 1rem 0 0 1rem; }
-    header .coupleHeader a {
-      text-decoration: none; }
-    header .coupleHeader h1 {
-      margin: 0; }
+  header .wcLogo {
+    /* top | right | bottom | left */
+    margin: 1rem 0 0 1rem;
+    height: 105px;
+    width: auto; }
 
 /*----------- NAVIGATION --------------*/
 /* The Overlay (background) using https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/
@@ -366,6 +366,7 @@ header {
 
 /* Position the content inside the overlay */
 nav .menu {
+  padding-left: 0;
   position: relative;
   top: 25%;
   width: 100%;
@@ -393,6 +394,9 @@ nav .menu {
   right: .03em;
   font-size: 3.75rem; }
 
+.overlay {
+  background-color: #000000c9; }
+
 /* Add this to your CSS */
 .overlay.show-nav {
   width: 100%; }
@@ -403,6 +407,14 @@ nav .menu {
 /*----------- MAIN --------------*/
 main h1 {
   font-size: 3.75rem; }
+main .verticalDate {
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+  letter-spacing: -2rem; }
+main .verticalYear {
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+  letter-spacing: -2rem; }
 
 /*----------- FOOTER --------------*/
 footer {
@@ -419,7 +431,14 @@ footer {
 
 @media only screen and (min-width: 35rem) {
   /*----------- BODY --------------*/
+  body {
+    background-image: url("../images/mtnKissHero.jpg"); }
+
   /*----------- HEADER --------------*/
+  .wcLogo {
+    height: 155px;
+    width: auto; }
+
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
   /*----------- FOOTER --------------*/ }
@@ -430,6 +449,9 @@ footer {
           margin:auto;
   } */
   /*----------- BODY --------------*/
+  body {
+    background-image: url("../images/mtnKissHero.jpg"); }
+
   .navAndHeader {
     display: flex;
     justify-content: space-between; }
@@ -446,13 +468,15 @@ footer {
       display: none; }
 
   /*----------- NAVIGATION --------------*/
-  nav #myNav {
-    height: auto;
+  #myNav {
+    background-color: transparent;
+    height: 5rem;
     width: 100%;
     /* Reset width for larger viewports */
     display: flex;
     align-items: center;
     /* Add this line */ }
+
   nav #closeIcon {
     display: none; }
   nav .menu {
