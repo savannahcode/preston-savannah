@@ -40,7 +40,7 @@
         <!-- Overlay content -->
         <ul class="menu">
           <li><a href="ourStory.html" onclick="closeNav()">Our Story</a></li>
-          <li><a href="#" onclick="closeNav()">Registry</a></li>
+          <li><a href="#" class="active" onclick="closeNav()">Registry</a></li>
           <li>
             <a href="itinerary.html" onclick="closeNav()">Itinerary</a>
           </li>
@@ -51,15 +51,43 @@
 
     <!-- CONTENT HERE -->
     <main>
-      <h1>Registry</h1>
-      <button>Amazon Registry</button>
-      <h2>Registered Under:</h2>
-      <h2>Savannah Hilton</h2>
-      <h2>Preston Savannah</h2>
-      <button>Venmo</button>
-      <h2>Venmo Username:</h2>
-      <h2>@sav-preston</h2>
-      <p>Insert venmo QR code here</p>
+      <div class="contentPage">
+        <h1>Registry</h1>
+        <div class="registryInfo">
+          <div>
+            <a href="https://www.amazon.com/wedding/share/preston-savannah"
+              ><button>Amazon Registry</button></a
+            >
+            <h2>Registered Under:</h2>
+            <p>Savannah Hilton</p>
+            <p>Preston Everett</p>
+          </div>
+          <div>
+            <a href="https://account.venmo.com/u/sav-preston"
+              ><button>Venmo</button></a
+            >
+            <h2>Venmo Username:</h2>
+            <p>@sav-preston</p>
+          </div>
+          <div class="registryPara">
+            <p>
+              All the gifts given so far, and all the gifts to come, are SO SO
+              APPRECIATED.
+            </p>
+            <p>
+              If items are running low on the registry feel free to contribute a
+              small portion of the cost for a more expensive gift, or to venmo
+              us if you'd like.
+            </p>
+            <p>Thank you so much!</p>
+          </div>
+          <img
+            src="images/sav-preston-venmo.png"
+            alt="Ben and Daphne Venmo QR Code"
+            class="venmoQR"
+          />
+        </div>
+      </div>
     </main>
 
     <!-- FOOTER HERE -->

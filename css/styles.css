@@ -390,6 +390,10 @@ nav .menu {
   text-align: center; }
 
 /* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+  color: #818181; }
+
 /* Position the close button (top right corner) */
 .overlay #closeIcon {
   position: absolute;
@@ -402,6 +406,10 @@ nav .menu {
 /* Add this to your CSS */
 .overlay.show-nav {
   width: 100%; }
+
+#myNav li .active {
+  text-decoration: underline;
+  text-underline-offset: .3em; }
 
 #myNav {
   color: rgba(0, 0, 0, 0.528); }
@@ -460,16 +468,22 @@ main .circleText span {
 main .contentPage {
   margin: auto;
   text-align: center; }
+  main .contentPage p {
+    font-size: 1.3rem;
+    margin-top: .2rem;
+    font-family: Helvetica, sans-serif; }
   main .contentPage h1 {
     text-align: center;
     margin-bottom: .5rem; }
   main .contentPage #selectPhotos {
     margin: .5rem; }
+  main .contentPage button:hover {
+    background-color: #ffffff34; }
   main .contentPage button {
-    border: #252525 solid .1rem;
+    background-color: transparent;
+    border: white 3px solid;
     border-radius: .5rem;
     font-size: 2rem;
-    background-color: #F5F0EC;
     text-transform: uppercase;
     /* top | left and right | bottom */
     padding: 1.5rem .5rem 1rem;
@@ -571,25 +585,29 @@ main .contentPage {
       font-size: 2.2rem;
       margin-bottom: 0; }
     main .contentPage .stories h3 {
-      font-size: 1.8rem;
+      font-size: 2rem;
       margin-bottom: 0;
-      padding-top: .5rem; }
+      padding-top: .5rem;
+      text-align: center; }
     main .contentPage .stories .storyBtns {
-      padding: auto;
+      margin: auto;
       width: fit-content; }
-    main .contentPage .stories p {
-      font-size: 1.5rem;
-      margin-top: .2rem;
-      font-family: Helvetica, sans-serif; }
     main .contentPage .stories #herStory {
       margin: auto; }
     main .contentPage .stories #hisStory {
       margin: auto;
       margin-top: 1rem; }
+    main .contentPage .stories p {
+      font-size: 1.7rem; }
     main .contentPage .stories button {
-      background-color: transparent;
-      border: white 3px solid;
       font-size: 1.5rem; }
+  main .contentPage .registryPara {
+    max-width: 44rem;
+    text-align: left;
+    margin: auto;
+    padding: 1rem;
+    border: #ffffff solid 3px;
+    border-radius: 10px; }
 
 /*----------- FOOTER --------------*/
 footer {
@@ -662,7 +680,11 @@ footer {
     top: 30%;
     font-size: 1.2em;
     transform-origin: 0 100px; }
-  main .contentPage .photoButtons button {
+  main .contentPage .stories {
+    max-width: 43rem;
+    margin: auto; }
+  main .contentPage .photoButtons
+  button {
     min-width: 29rem;
     font-size: 2.6rem; }
   main .contentPage .date .dateInfo p p {
@@ -763,6 +785,10 @@ footer {
     width: auto;
     overflow-x: auto;
     background-color: transparent; }
+
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #fffbc3; }
 
   /*----------- MAIN --------------*/
   main .contentPage .registryInfo {
