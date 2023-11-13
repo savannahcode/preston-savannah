@@ -415,199 +415,221 @@ nav .menu {
   color: rgba(0, 0, 0, 0.528); }
 
 /*----------- MAIN --------------*/
-main h1 {
-  font-size: 2.75rem; }
-main .verticalNumDate {
-  text-orientation: upright;
-  writing-mode: vertical-rl;
-  letter-spacing: -2.5rem;
-  position: absolute;
-  top: 67%;
-  right: 0; }
-main .verticalMonth {
-  text-orientation: upright;
-  writing-mode: vertical-rl;
-  letter-spacing: -2.5rem;
-  position: absolute;
-  top: 25%;
-  right: 0; }
-main .verticalYear {
-  text-orientation: upright;
-  writing-mode: vertical-rl;
-  letter-spacing: -2.5rem;
-  position: absolute;
-  top: 40%;
-  left: 0; }
-main .circle {
-  position: relative;
-  width: 18rem;
-  height: 18rem;
-  border-radius: 100vmax;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  margin-top: 13rem;
-  animation: textRotation 8s linear infinite; }
-main .circleText {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  color: #000;
-  font-size: 2.75rem;
-  letter-spacing: 10px; }
+main {
+  /*
+Scroll to top button from: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+*/
+  /* End of SCROLL Btn CSS*/ }
+  main h1 {
+    font-size: 2.75rem; }
+  main .verticalNumDate {
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+    letter-spacing: -2.5rem;
+    position: absolute;
+    top: 67%;
+    right: 0; }
+  main .verticalMonth {
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+    letter-spacing: -2.5rem;
+    position: absolute;
+    top: 25%;
+    right: 0; }
+  main .verticalYear {
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+    letter-spacing: -2.5rem;
+    position: absolute;
+    top: 40%;
+    left: 0; }
+  main .circle {
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 100vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 13rem;
+    animation: textRotation 8s linear infinite; }
+  main .circleText {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    font-size: 2.75rem;
+    letter-spacing: 10px; }
 @keyframes textRotation {
   to {
     transform: rotate(360deg); } }
-main .circleText span {
-  position: absolute;
-  left: 53%;
-  top: 45%;
-  font-size: 1.2em;
-  transform-origin: 0 30px; }
-main .contentPage {
-  margin: auto;
-  text-align: center; }
-  main .contentPage p {
-    font-size: 1.3rem;
-    margin-top: .2rem;
-    font-family: Helvetica, sans-serif; }
-  main .contentPage h1 {
-    text-align: center;
-    margin-bottom: .5rem; }
-  main .contentPage #selectPhotos {
-    margin: .5rem; }
-  main .contentPage button:hover {
-    background-color: #ffffff34; }
-  main .contentPage button {
-    background-color: transparent;
-    border: white 3px solid;
-    border-radius: .5rem;
-    font-size: 2rem;
-    text-transform: uppercase;
-    /* top | left and right | bottom */
-    padding: 1.5rem .5rem 1rem;
-    margin: .4rem; }
-    main .contentPage button a {
-      text-decoration: none; }
-  main .contentPage .venmoQR {
-    border-radius: .5rem;
-    height: 14rem;
-    width: auto;
-    margin: 1.3rem 0; }
-  main .contentPage .photoButtons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0 2rem;
-    max-width: 40rem;
-    margin: auto; }
-    main .contentPage .photoButtons button {
-      min-width: 23rem;
-      font-size: 1.5rem; }
-  main .contentPage .registryInfo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  main .circleText span {
+    position: absolute;
+    left: 53%;
+    top: 45%;
+    font-size: 1.2em;
+    transform-origin: 0 30px; }
+  main .contentPage {
     margin: auto;
-    max-width: 25rem; }
-    main .contentPage .registryInfo div {
-      margin: .5rem 2rem; }
-    main .contentPage .registryInfo button {
-      min-width: 19.5rem; }
-  main .contentPage .allDates {
-    margin: auto;
-    margin-bottom: 2rem;
-    max-width: 25rem; }
-  main .contentPage .date {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    width: fit-content; }
-    main .contentPage .date svg {
-      fill: #ffffff;
-      height: 3rem;
-      width: auto;
-      margin: .5rem; }
-    main .contentPage .date img {
-      display: inline;
-      color: #ffffff;
-      filter: invert(100%);
-      height: 3rem;
-      width: auto; }
-    main .contentPage .date .dateInfo {
-      text-align: left;
-      margin: 0rem 1rem 1rem;
-      max-width: 16rem; }
-      main .contentPage .date .dateInfo h2 {
-        margin: 1rem 1rem 0;
-        font-size: 1.8rem; }
-      main .contentPage .date .dateInfo p {
-        /* top right bottom left*/
-        margin: 0 0 0 1.5rem;
-        font-size: 1.3rem;
-        max-width: 20rem; }
-  main .contentPage .photosDisplay img {
-    margin: .5rem;
-    border-radius: 3%;
-    width: 96%;
-    height: auto; }
-  main .contentPage .photosDisplay h2 {
-    max-width: 33rem;
-    margin: auto;
-    text-align: left;
-    padding: .8rem;
-    margin-bottom: 2rem; }
-  main .contentPage .itinerary {
-    text-align: left;
-    max-width: 30rem;
-    margin: auto;
-    margin-top: 2rem;
-    padding: .6rem 2rem; }
-    main .contentPage .itinerary h2 {
-      margin: 0 0 .7rem 0;
-      font-size: 2.5rem; }
-    main .contentPage .itinerary h3 {
-      margin: 0 0 0 .3rem;
-      font-size: 1.7rem; }
-    main .contentPage .itinerary h4 {
-      margin: 0 0 1.3rem 1rem;
-      font-size: 1.5rem; }
-    main .contentPage .itinerary a {
-      text-decoration-thickness: .05rem;
-      line-height: 2.5rem;
-      text-underline-offset: .3rem; }
-  main .contentPage .stories {
-    margin: 2rem 1rem;
-    text-align: left; }
-    main .contentPage .stories h2 {
+    text-align: center; }
+    main .contentPage p {
+      font-size: 1.3rem;
+      margin-top: .2rem;
+      font-family: Helvetica, sans-serif; }
+    main .contentPage h1 {
       text-align: center;
-      font-size: 2.2rem;
-      margin-bottom: 0; }
-    main .contentPage .stories h3 {
+      margin-bottom: .5rem; }
+    main .contentPage #selectPhotos {
+      margin: .5rem; }
+    main .contentPage button:hover {
+      background-color: #ffffff34; }
+    main .contentPage button {
+      background-color: transparent;
+      border: white 3px solid;
+      border-radius: .5rem;
       font-size: 2rem;
-      margin-bottom: 0;
-      padding-top: .5rem;
-      text-align: center; }
-    main .contentPage .stories .storyBtns {
+      text-transform: uppercase;
+      /* top | left and right | bottom */
+      padding: 1.5rem .5rem 1rem;
+      margin: .4rem; }
+      main .contentPage button a {
+        text-decoration: none; }
+    main .contentPage .venmoQR {
+      border-radius: .5rem;
+      height: 14rem;
+      width: auto;
+      margin: 1.3rem 0; }
+    main .contentPage .photoButtons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 0 2rem;
+      max-width: 40rem;
+      margin: auto; }
+      main .contentPage .photoButtons button {
+        min-width: 23rem;
+        font-size: 1.5rem; }
+    main .contentPage .registryInfo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: auto;
+      max-width: 25rem; }
+      main .contentPage .registryInfo div {
+        margin: .5rem 2rem; }
+      main .contentPage .registryInfo button {
+        min-width: 19.5rem; }
+    main .contentPage .allDates {
+      margin: auto;
+      margin-bottom: 2rem;
+      max-width: 25rem; }
+    main .contentPage .date {
+      display: flex;
+      flex-wrap: wrap;
       margin: auto;
       width: fit-content; }
-    main .contentPage .stories #herStory {
-      margin: auto; }
-    main .contentPage .stories #hisStory {
+      main .contentPage .date svg {
+        fill: #ffffff;
+        height: 3rem;
+        width: auto;
+        margin: .5rem; }
+      main .contentPage .date img {
+        display: inline;
+        color: #ffffff;
+        filter: invert(100%);
+        height: 3rem;
+        width: auto; }
+      main .contentPage .date .dateInfo {
+        text-align: left;
+        margin: 0rem 1rem 1rem;
+        max-width: 16rem; }
+        main .contentPage .date .dateInfo h2 {
+          margin: 1rem 1rem 0;
+          font-size: 1.8rem; }
+        main .contentPage .date .dateInfo p {
+          /* top right bottom left*/
+          margin: 0 0 0 1.5rem;
+          font-size: 1.3rem;
+          max-width: 20rem; }
+    main .contentPage .photosDisplay img {
+      margin: .5rem;
+      border-radius: 3%;
+      width: 96%;
+      height: auto; }
+    main .contentPage .photosDisplay h2 {
+      max-width: 33rem;
       margin: auto;
-      margin-top: 1rem; }
-    main .contentPage .stories p {
-      font-size: 1.7rem; }
-    main .contentPage .stories button {
-      font-size: 1.5rem; }
-  main .contentPage .registryPara {
-    max-width: 44rem;
-    text-align: left;
-    margin: auto;
-    padding: 1rem;
-    border: #ffffff solid 3px;
-    border-radius: 10px; }
+      text-align: left;
+      padding: .8rem;
+      margin-bottom: 2rem; }
+    main .contentPage .itinerary {
+      text-align: left;
+      max-width: 30rem;
+      margin: auto;
+      margin-top: 2rem;
+      padding: .6rem 2rem; }
+      main .contentPage .itinerary h2 {
+        margin: 0 0 .7rem 0;
+        font-size: 2.5rem; }
+      main .contentPage .itinerary h3 {
+        margin: 0 0 0 .3rem;
+        font-size: 1.7rem; }
+      main .contentPage .itinerary h4 {
+        margin: 0 0 1.3rem 1rem;
+        font-size: 1.5rem; }
+      main .contentPage .itinerary a {
+        text-decoration-thickness: .05rem;
+        line-height: 2.5rem;
+        text-underline-offset: .3rem; }
+    main .contentPage .stories {
+      margin: 2rem 1rem;
+      text-align: left; }
+      main .contentPage .stories h2 {
+        text-align: center;
+        font-size: 2.2rem;
+        margin-bottom: 0; }
+      main .contentPage .stories h3 {
+        font-size: 2rem;
+        margin-bottom: 0;
+        padding-top: .5rem;
+        text-align: center; }
+      main .contentPage .stories .storyBtns {
+        margin: auto;
+        width: fit-content; }
+      main .contentPage .stories #herStory {
+        margin: auto; }
+      main .contentPage .stories #hisStory {
+        margin: auto;
+        margin-top: 1rem; }
+      main .contentPage .stories p {
+        font-size: 1.7rem; }
+      main .contentPage .stories button {
+        font-size: 1.5rem; }
+    main .contentPage .registryPara {
+      max-width: 44rem;
+      text-align: left;
+      margin: auto;
+      padding: 1rem;
+      border: #ffffff solid 3px;
+      border-radius: 10px; }
+  main #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border-radius: .4rem;
+    border: solid .15rem #fff;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    cursor: pointer;
+    padding: .8rem .4rem .5rem .4rem;
+    line-height: normal; }
+  main #myBtn:hover {
+    background-color: rgba(60, 60, 60, 0.8); }
 
 /*----------- FOOTER --------------*/
 footer {

@@ -76,3 +76,68 @@ text.innerHTML = textContent
     }deg);">${char}</span>`
   })
   .join("")
+
+let engagementBtn = document.querySelector(".engagements")
+let bridalsBtn = document.querySelector(".bridals")
+let weddingBtn = document.querySelector(".wedding")
+let allPhotosBtn = document.querySelector(".all")
+let photosDisplay = document.querySelector(".photosDisplay")
+
+function openNav() {
+  document.getElementById("myNav").style.width = "100%"
+}
+
+/* Close */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%"
+}
+
+window.addEventListener("resize", checkScreenWidth)
+// Function to check screen width and open navigation if needed
+function checkScreenWidth() {
+  if (window.innerWidth >= 64 * 16) {
+    // 64rem * 16px (1rem = 16px)
+    openNav()
+  } else {
+    closeNav()
+  }
+}
+
+engagementBtn.addEventListener("click", handleEngagementClick)
+bridalsBtn.addEventListener("click", handleBridalsClick)
+weddingBtn.addEventListener("click", handleWeddingClick)
+allPhotosBtn.addEventListener("click", handleAllPhotosClick)
+
+function handleEngagementClick() {
+  photosDisplay.innerHTML = ""
+  for (let index = 1; index <= 166; index++) {
+    let newImg = document.createElement("img")
+    newImg.src = `images/daphne-ben-engagements/engagements${index}.jpg`
+    photosDisplay.appendChild(newImg)
+  }
+}
+
+function handleBridalsClick() {
+  photosDisplay.innerHTML = ""
+  let message = document.createElement("h2")
+  message.textContent =
+    "Sorry! We don't have the Bridal pictures available yet. Please check back later."
+  photosDisplay.appendChild(message)
+}
+
+function handleWeddingClick() {
+  photosDisplay.innerHTML = ""
+  let message = document.createElement("h2")
+  message.textContent =
+    "Sorry! We don't have the Wedding pictures available yet, especially since the wedding doesn't take place till 11/17/2023. Please check back later."
+  photosDisplay.appendChild(message)
+}
+
+function handleAllPhotosClick() {
+  photosDisplay.innerHTML = ""
+  let message = document.createElement("h2")
+  message.textContent =
+    "Sorry! We only have the Engagement pictures so far, but here they all are!"
+  handleEngagementClick()
+  photosDisplay.appendChild(message)
+}

@@ -51,16 +51,28 @@
 
     <!-- CONTENT HERE -->
     <main>
-      <h1>Photos</h1>
-      <h2>Select what category of photos you would like to view below:</h2>
-      <button>DATING</button>
-      <button>ENGAGED</button>
-      <button>ENGAGEMENTS PHOTOSHOOT</button>
-      <button>BRIDALS PHOTOSHOOT</button>
-      <button>WEDDING DAY PHOTOS</button>
-      <button>ALL PHOTOS</button>
-      <h2>Scroll Down To View</h2>
-      <i class="fa-solid fa-angle-down"></i>
+      <div class="contentPage">
+        <h1>Photos</h1>
+        <!--SCROLL to top button-->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+          SCROLL TO TOP
+        </button>
+
+        <h2 id="selectPhotos">
+          Select what category of photos you would like to view below:
+        </h2>
+        <div class="photoButtons">
+          <button>DATING</button>
+          <button>ENGAGED</button>
+          <button class="engagements">ENGAGEMENTS PHOTOSHOOT</button>
+          <button class="bridals">BRIDALS PHOTOSHOOT</button>
+          <button class="wedding">WEDDING DAY PHOTOS</button>
+          <button class="all">ALL PHOTOS</button>
+        </div>
+        <h2>Scroll Down To View</h2>
+        <i class="fa-solid fa-angle-down"></i>
+        <div class="photosDisplay"></div>
+      </div>
     </main>
 
     <!-- FOOTER HERE -->
