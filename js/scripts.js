@@ -50,29 +50,13 @@ function topFunction() {
 Animted Text Circle
 https://youtu.be/zwl3kZPZ8H8
 */
-let circDegree = 10.3
-let circWidth = -10
-// transform degree at which the text is rotated
-// translate to make a bigger circle (circWidth)`
 
-if (window.screen.width < 560) {
-  // phone/small screens
-  // 560px is the width of the screen
-  // set variable for the transform rotate & translation
-  circDegree = 10.3
-  circWidth = -10
-} else if (window.screen.width < 1024) {
-  // medium screens
-  circDegree = 10.3
-  circWidth = -10
-} else {
-  // large screens
-  circDegree = 10.3
-  circWidth = -10
+function addSpace(x) {
+  return x + " ♥ "
 }
 
 const text = document.querySelector(".circleText")
-const textContent = text.innerText.trim()
+const textContent = addSpace(text.innerText.trim())
 const numChars = textContent.length
 const radius = 100 // Adjust this value as needed for the circle size
 

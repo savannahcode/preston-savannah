@@ -407,14 +407,30 @@ nav .menu {
 /*----------- MAIN --------------*/
 main h1 {
   font-size: 3.75rem; }
-main .verticalDate {
+main .verticalNumDate {
   text-orientation: upright;
   writing-mode: vertical-rl;
-  letter-spacing: -2rem; }
+  letter-spacing: -3rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 3.5rem; }
+main .verticalMonth {
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+  letter-spacing: -3rem;
+  position: absolute;
+  top: 17%;
+  right: 0;
+  font-size: 3.5rem; }
 main .verticalYear {
   text-orientation: upright;
   writing-mode: vertical-rl;
-  letter-spacing: -2rem; }
+  letter-spacing: -2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 3.5rem; }
 main .circle {
   position: relative;
   width: 30rem;
@@ -424,13 +440,14 @@ main .circle {
   align-items: center;
   justify-content: center;
   margin: auto;
+  margin-top: 6rem;
   animation: textRotation 8s linear infinite; }
 main .circleText {
   position: absolute;
   width: 100%;
   height: 100%;
   color: #000;
-  font-size: 3rem;
+  font-size: 3.5rem;
   letter-spacing: 10px; }
 @keyframes textRotation {
   to {
@@ -444,10 +461,12 @@ main .circleText span {
 
 /*----------- FOOTER --------------*/
 footer {
-  padding: .5rem 2%;
-  text-align: center;
   font-size: .7rem;
-  margin-top: auto; }
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  letter-spacing: 2px;
+  padding-bottom: 1rem; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -518,8 +537,7 @@ footer {
         text-decoration: none;
         font-size: 2.25rem;
         text-align: center;
-        padding-bottom: 0;
-        margin-bottom: 1em; }
+        padding-bottom: 0; }
 
   .overlay {
     position: relative;
