@@ -333,7 +333,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url("../images/mtnKissHeroPhone.jpg");
+  background-image: url("../images/mtnKissHeroPhoneQual.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
@@ -655,7 +655,7 @@ footer {
 @media only screen and (min-width: 35rem) {
   /*----------- BODY --------------*/
   body {
-    background-image: url("../images/mtnKissHero.jpg"); }
+    background-image: url("../images/mtnKissHeroQual.jpg"); }
 
   /*----------- HEADER --------------*/
   .wcLogo {
