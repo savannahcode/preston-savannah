@@ -1,5 +1,5 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; scroll-behavior: smooth;}
 
 /* FONTS */
 @font-face {
@@ -326,8 +326,42 @@ h1{
       text-underline-offset: .3rem;
     }
   }
-  // end of .contentPage
-}
+  .stories{
+    margin: 2rem 1rem;
+    h2{
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 0;
+    }
+    h3{
+      font-size: 1.8rem;
+      margin-bottom: 0;
+      padding-top: .5rem;
+    }
+    .storyBtns{
+      padding: auto;
+      width: fit-content;
+    }
+    text-align: left;
+    p{
+      font-size: 1.5rem;
+      margin-top: .2rem;
+      font-family: Helvetica, sans-serif;
+    }
+    #herStory{
+      margin: auto;
+    }
+    #hisStory{
+      margin: auto;
+      margin-top: 1rem;
+    }
+    button{
+      background-color: transparent;
+      border: white 3px solid;
+      font-size: 1.5rem;
+    }
+  }
+} // end of .contentPage
 }
 
 
