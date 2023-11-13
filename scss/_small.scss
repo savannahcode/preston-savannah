@@ -408,13 +408,21 @@ Scroll to top button from: https://www.w3schools.com/howto/howto_js_scroll_to_to
 
 /*----------- FOOTER --------------*/
 footer {
-    font-size: .7rem;
+  padding: .5rem 2%;
+  text-align: center;
+  font-size: .7rem;
+  margin-top: auto;
+}
+
+#homeFooter{
+  font-size: .7rem;
     position: absolute;
     bottom: 0;
     left: 40%;
     letter-spacing: 2px;
     padding-bottom: 1rem;
 }
+
 
 
 
