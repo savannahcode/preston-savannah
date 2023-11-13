@@ -764,9 +764,6 @@ footer {
           margin:auto;
   } */
   /*----------- BODY --------------*/
-  body {
-    background-image: url("../images/mtnKissHero.jpg"); }
-
   .navAndHeader {
     display: flex;
     justify-content: space-between; }
