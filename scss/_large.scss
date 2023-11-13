@@ -72,7 +72,18 @@ nav {
     background-color: transparent;    }
 
 /*----------- MAIN --------------*/
-
+main{
+  //DaphBen css
+  .contentPage{
+    .registryInfo{
+      max-width: 55rem;
+    }
+    .photosDisplay img{
+      width: auto;
+      height: 41rem;
+    }
+  }
+}
 
 
 /*----------- FOOTER --------------*/

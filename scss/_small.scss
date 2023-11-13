@@ -190,6 +190,144 @@ h1{
 	font-size: 1.2em;
 	transform-origin: 0 30px;
 }
+
+// From DaphBen Site
+.contentPage{
+  h1{
+    text-align: center;
+    margin-bottom: .5rem;
+  }
+  #selectPhotos{
+    margin: .5rem;
+  }
+  margin: auto;
+  text-align: center;
+  button{
+    border: #252525 solid .1rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    background-color: #F5F0EC;
+    text-transform: uppercase;
+    /* top | left and right | bottom */
+    padding: 1.5rem .5rem 1rem;
+    margin: .4rem;
+    a{
+      text-decoration: none;
+    }
+  }
+  .venmoQR{
+    border-radius: .5rem;
+    height: 14rem;
+    width: auto;
+    margin: 1.3rem 0;
+  }
+  .photoButtons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 2rem;
+    max-width: 40rem;
+    margin: auto;
+    button{
+      min-width: 23rem;
+      font-size: 1.5rem;
+    }
+  }
+  .registryInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    max-width: 25rem;
+    div{
+      margin: .5rem 2rem;
+    }
+    button{
+      min-width: 19.5rem;
+    }
+  }
+  .allDates{
+    margin: auto;
+    margin-bottom: 2rem;
+    max-width: 25rem
+  }
+  .date{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: fit-content;
+    svg{
+      fill: #ffffff;
+      height: 3rem;
+      width: auto;
+      margin: .5rem;
+    }
+    img{
+      display: inline;
+      color: #ffffff;
+      filter: invert(100%);
+      height: 3rem;
+      width: auto;
+    }
+    .dateInfo{
+      text-align: left;
+      margin: 0rem 1rem 1rem;
+      max-width: 16rem;
+      h2{
+        margin: 1rem 1rem 0;
+        font-size: 1.8rem;
+      }
+      p{
+        /* top right bottom left*/
+        margin: 0 0 0 1.5rem;
+        font-size: 1.3rem;
+        max-width: 20rem;
+      }
+    }
+  }
+  // photos
+  .photosDisplay{
+    img{
+      margin: .5rem;
+      border-radius: 3%;
+      width: 96%;
+      height: auto;
+    }
+    h2{
+      max-width: 33rem;
+      margin: auto;
+      text-align: left;
+      padding: .8rem; margin-bottom: 2rem;
+    }
+  }
+
+  // itinerary page
+  .itinerary{
+    text-align: left;
+    max-width: 30rem;
+    margin: auto;
+    margin-top: 2rem;
+    padding: .6rem 2rem;
+    h2{
+      margin: 0 0 .7rem 0;
+      font-size: 2.5rem;
+    }
+    h3{
+      margin: 0 0 0 .3rem;
+      font-size: 1.7rem;
+    }
+    h4{
+      margin: 0 0 1.3rem 1rem;
+      font-size: 1.5rem;
+    }
+    a{
+      text-decoration-thickness: .05rem;
+      line-height: 2.5rem;
+      text-underline-offset: .3rem;
+    }
+  }
+  // end of .contentPage
+}
 }
 
 

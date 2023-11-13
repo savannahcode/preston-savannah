@@ -76,7 +76,71 @@ main{
 	font-size: 1.2em;
 	transform-origin: 0 100px;
 }
+// DaphBen css
+.contentPage{
+  .photoButtons button{
+    min-width: 29rem;
+    font-size: 2.6rem;
+  }
+  .date .dateInfo p{
+    p{
+        max-width: 30rem;
+      }
+  }
+  .allDates{
+    margin: auto;
+    margin-bottom: 2rem;
+    min-width: 36rem;
+
+  .date{
+    min-width: 35rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    width: fit-content;
+    i{
+      color: #252525;
+      margin: .5rem;
+    }
+    img{
+      height: 5rem;
+      width: auto;
+      margin: .5rem;
+    }
+    svg{
+      height: 5rem;
+      width: auto;
+      margin: .5rem;
+    }
+    .dateInfo{
+      text-align: left;
+      margin: 0 1rem;
+      min-width: 27rem;
+      h2{
+        margin: 1rem 1rem 0;
+        font-size: 2.3rem;
+      }
+      p{
+        /* top right bottom left*/
+        margin: 0 0 0 1.5rem;
+        font-size: 1.3rem;
+        max-width: 25rem;
+      }
+    }
 }
+  }
+  .contentPage{
+
+   .itinerary{
+    max-width: 38rem;
+    a{
+    text-underline-position: under;
+    line-height: normal;
+  }
+   }
+} 
+}}
+
 
 
 /*----------- FOOTER --------------*/
