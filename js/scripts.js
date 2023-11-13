@@ -45,3 +45,50 @@ function topFunction() {
   document.body.scrollTop = 0 // For Safari
   document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
 }
+
+/*
+Animted Text Circle
+https://youtu.be/zwl3kZPZ8H8
+*/
+let circDegree = 10.3
+let circWidth = -10
+// transform degree at which the text is rotated
+// translate to make a bigger circle (circWidth)`
+
+if (window.screen.width < 560) {
+  // phone/small screens
+  // 560px is the width of the screen
+  // set variable for the transform rotate & translation
+  circDegree = 10.3
+  circWidth = -10
+} else if (window.screen.width < 1024) {
+  // medium screens
+  circDegree = 10.3
+  circWidth = -10
+} else {
+  // large screens
+  circDegree = 10.3
+  circWidth = -10
+}
+
+const text = document.querySelector(".circleText")
+const textContent = text.innerText.trim()
+const numChars = textContent.length
+const radius = 100 // Adjust this value as needed for the circle size
+
+text.innerHTML = textContent
+  .split("")
+  .map((char, i) => {
+    const angle = (360 / numChars) * i
+    const x = radius * Math.cos((angle * Math.PI) / 180)
+    const y = radius * Math.sin((angle * Math.PI) / 180)
+
+    // Adjusting the positioning to the center of the circle
+    const translationX = x - 10 // Adjust this value to fine-tune the positioning
+    const translationY = y - 10 // Adjust this value to fine-tune the positioning
+
+    return `<span style="position: absolute; transform: translate(${translationX}px, ${translationY}px) rotate(${
+      angle + 90
+    }deg);">${char}</span>`
+  })
+  .join("")

@@ -415,6 +415,32 @@ main .verticalYear {
   text-orientation: upright;
   writing-mode: vertical-rl;
   letter-spacing: -2rem; }
+main .circle {
+  position: relative;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 100vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  animation: textRotation 8s linear infinite; }
+main .circleText {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  font-size: 3rem;
+  letter-spacing: 10px; }
+@keyframes textRotation {
+  to {
+    transform: rotate(360deg); } }
+main .circleText span {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  font-size: 1.2em;
+  transform-origin: 0 100px; }
 
 /*----------- FOOTER --------------*/
 footer {
