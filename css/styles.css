@@ -579,14 +579,13 @@ footer {
       nav .menu li a {
         text-decoration: none;
         font-size: 2.25rem;
-        text-align: center;
-        padding-bottom: 0; }
+        text-align: center; }
 
   .overlay {
     position: relative;
     width: auto;
     overflow-x: auto;
-    margin-top: .5em; }
+    background-color: transparent; }
 
   /*----------- MAIN --------------*/
   /*----------- FOOTER --------------*/
