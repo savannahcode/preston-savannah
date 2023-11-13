@@ -55,118 +55,117 @@ header {
 
 /*----------- NAVIGATION --------------*/
       
-    /* The Overlay (background) using https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/
+     /* The Overlay (background) using https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/
 .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
-  
-  /* Position the content inside the overlay */
-  nav .menu {
-    padding-left: 0;
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    background-color: transparent; /* Make the menu content background transparent */
-    li {
-        list-style-type: none;
-        text-decoration: none;
-        background-color: transparent;
-    }
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 
-  
-  /* The navigation links inside the overlay */
-  .overlay a {
-    padding: .5em;
-    text-decoration: none;
-    font-size: 2.25rem;
-    //color: #f1f1f1;
-    display: block;
-    transition: 0.3s;
-    background-color: transparent;
+/* Position the content inside the overlay */
+nav .menu {
+  padding-left: 0;
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  background-color: transparent; /* Make the menu content background transparent */
+  li {
+      list-style-type: none;
+      text-decoration: none;
+      background-color: transparent;
   }
-  
-  /* When you mouse over the navigation links, change their color */
-  .overlay a:hover,
-  .overlay a:focus {
-    //color: #818181;
-  }
-  
-  /* Position the close button (top right corner) */
-  .overlay #closeIcon {
-    position: absolute;
-    right: .03em;
-    font-size: 3.75rem;
-  }
-  .overlay{
-    background-color: #000000c9;
-  }
-  /* Add this to your CSS */
-  .overlay.show-nav {
-    width: 100%;
-  }
+}
 
-  #myNav li.active a {
-    //color: #929292;
-  }
-  #myNav{
-    color: rgba(0, 0, 0, 0.528);
-  }
-  
-  
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: .5em;
+  text-decoration: none;
+  font-size: 2.25rem;
+  //color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+  background-color: transparent;
+  text-align: center;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+  //color: #818181;
+}
+
+/* Position the close button (top right corner) */
+.overlay #closeIcon {
+  position: absolute;
+  right: .03em;
+  font-size: 3.75rem;
+}
+.overlay{
+  background-color: #000000c9;
+}
+/* Add this to your CSS */
+.overlay.show-nav {
+  width: 100%;
+}
+
+#myNav li.active a {
+  //color: #929292;
+}
+#myNav{
+  color: rgba(0, 0, 0, 0.528);
+}
+
+
+
 
 
 /*----------- MAIN --------------*/
 main {
 h1{
-    font-size: 3.75rem;
+    font-size: 2.75rem;
 }
 .verticalNumDate{
   text-orientation: upright;
   writing-mode: vertical-rl;
-  letter-spacing: -3rem;
+  letter-spacing: -2.5rem;
   position: absolute;
-  bottom: 0;
+  top: 67%;
   right: 0;
-  font-size: 3.5rem;
 }
 .verticalMonth{
   text-orientation: upright;
   writing-mode: vertical-rl;
-  letter-spacing: -3rem;
+  letter-spacing: -2.5rem;
   position: absolute;
-  top: 17%;
+  top: 25%;
   right: 0;
-  font-size: 3.5rem;
 }
 .verticalYear{
   text-orientation: upright;
   writing-mode: vertical-rl;
-  letter-spacing: -2rem;
+  letter-spacing: -2.5rem;
   position: absolute;
-  bottom: 0;
+  top: 40%;
   left: 0;
-  font-size: 3.5rem;
 }
 // circular text START
 .circle {
 	position: relative;
-	width: 30rem;
-	height: 30rem;
+	width: 18rem;
+	height: 18rem;
 	border-radius: 100vmax;
 	display: flex;
 	align-items: center;
 	justify-content: center;
   margin: auto;
-  margin-top: 6rem;
+  margin-top: 13rem;
   animation: textRotation 8s linear infinite;
 }
 .circleText {
@@ -174,7 +173,7 @@ h1{
 	width: 100%;
 	height: 100%;
 	color: #000;
-	font-size: 3.5rem;
+	font-size: 2.75rem;
   letter-spacing: 10px;
 	
 }
@@ -186,10 +185,10 @@ h1{
 
 .circleText span {
 	position: absolute;
-	left: 50%;
-  top: 30%;
+	left: 53%;
+  top: 45%;
 	font-size: 1.2em;
-	transform-origin: 0 100px;
+	transform-origin: 0 30px;
 }
 }
 
