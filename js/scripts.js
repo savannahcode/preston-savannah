@@ -139,18 +139,20 @@ allPhotosBtn.addEventListener("click", handleAllPhotosClick)
 
 function handleDatingClick() {
   photosDisplay.innerHTML = ""
-  let message = document.createElement("h2")
-  message.textContent =
-    "We'll be adding the photos of our early dating soon! Please check back later."
-  photosDisplay.appendChild(message)
+  for (let index = 1; index <= 112; index++) {
+    let newImg = document.createElement("img")
+    newImg.src = `images/earlyDating/earlyDating${index}.jpeg`
+    photosDisplay.appendChild(newImg)
+  }
 }
 
 function handleEngagedClick() {
   photosDisplay.innerHTML = ""
-  let message = document.createElement("h2")
-  message.textContent =
-    "We'll be adding the photos of our dating while engaged photos soon! Please check back later."
-  photosDisplay.appendChild(message)
+  for (let index = 1; index <= 112; index++) {
+    let newImg = document.createElement("img")
+    newImg.src = `images/engagedDating/engagedDating${index}.jpeg`
+    photosDisplay.appendChild(newImg)
+  }
 }
 
 function handleEngagementClick() {
@@ -181,10 +183,8 @@ function handleWeddingClick() {
 
 function handleAllPhotosClick() {
   photosDisplay.innerHTML = ""
-  let message = document.createElement("h2")
-  message.textContent =
-    "Sorry! We only have the Engagement Photoshoot & Bridal Photoshoot pictures so far, but here they all are!"
+  handleDatingClick()
+  handleEngagedClick()
   handleEngagementClick()
   handleBridalsClick()
-  photosDisplay.appendChild(message)
 }
