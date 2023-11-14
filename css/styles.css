@@ -425,6 +425,10 @@ Scroll to top button from: https://www.w3schools.com/howto/howto_js_scroll_to_to
   main .verticalNumDate {
     text-orientation: upright;
     writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    /* For older Safari versions */
+    -webkit-text-orientation: upright;
+    /* For older Safari versions */
     letter-spacing: -2.5rem;
     position: absolute;
     top: 67%;
@@ -432,6 +436,10 @@ Scroll to top button from: https://www.w3schools.com/howto/howto_js_scroll_to_to
   main .verticalMonth {
     text-orientation: upright;
     writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    /* For older Safari versions */
+    -webkit-text-orientation: upright;
+    /* For older Safari versions */
     letter-spacing: -2.5rem;
     position: absolute;
     top: 25%;
@@ -642,9 +650,8 @@ footer {
   font-size: .7rem;
   position: absolute;
   bottom: 0;
-  left: 40%;
-  letter-spacing: 2px;
-  padding-bottom: 1rem; }
+  left: 27%;
+  letter-spacing: 2px; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -756,7 +763,9 @@ footer {
       text-underline-position: under;
       line-height: normal; }
 
-  /*----------- FOOTER --------------*/ }
+  /*----------- FOOTER --------------*/
+  #homeFooter {
+    right: 40%; } }
 /* end of media query */
 @media only screen and (min-width: 64rem) {
   /* header, nav, main, footer {
@@ -782,7 +791,7 @@ footer {
   /*----------- NAVIGATION --------------*/
   #myNav {
     background-color: transparent;
-    height: 5rem;
+    height: 6rem;
     width: 100%;
     /* Reset width for larger viewports */
     display: flex;
@@ -803,7 +812,8 @@ footer {
       nav .menu li a {
         text-decoration: none;
         font-size: 2.25rem;
-        text-align: center; }
+        text-align: center;
+        padding: 0 1.2rem; }
 
   .overlay {
     position: relative;

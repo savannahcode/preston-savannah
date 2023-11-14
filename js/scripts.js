@@ -1,11 +1,3 @@
-let datingBtn = document.querySelector(".dating")
-let engagedBtn = document.querySelector(".engaged")
-let engagementBtn = document.querySelector(".engagements")
-let bridalsBtn = document.querySelector(".bridals")
-let weddingBtn = document.querySelector(".wedding")
-let allPhotosBtn = document.querySelector(".all")
-let photosDisplay = document.querySelector(".photosDisplay")
-
 /* NAV open and close */
 /* Open */
 function openNav() {
@@ -60,7 +52,7 @@ https://youtu.be/zwl3kZPZ8H8
 */
 
 function addSpace(x) {
-  return x + " ♥ "
+  return x + " "
 }
 
 function createTextCircle() {
@@ -111,6 +103,33 @@ function checkScreenWidth() {
     closeNav()
   }
 }
+
+// change letter spacing based on browser
+// Detect Safari browser
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
+
+// Get the vertical text element
+const vertical1 = document.querySelector(".verticalYear")
+const vertical2 = document.querySelector(".verticalMonth")
+const vertical3 = document.querySelector(".verticalNumDate")
+
+// Apply letter spacing based on the detected browser
+if (isSafari) {
+  vertical1.style.letterSpacing = "-.5rem" // Adjust this value for Safari
+  vertical2.style.letterSpacing = "-.5rem"
+  vertical3.style.letterSpacing = "-.5rem"
+} else {
+  element.style.letterSpacing = "-2.5rem" // Adjust this value for other browsers
+}
+
+// photosBtns
+let datingBtn = document.querySelector(".dating")
+let engagedBtn = document.querySelector(".engaged")
+let engagementBtn = document.querySelector(".engagements")
+let bridalsBtn = document.querySelector(".bridals")
+let weddingBtn = document.querySelector(".wedding")
+let allPhotosBtn = document.querySelector(".all")
+let photosDisplay = document.querySelector(".photosDisplay")
 
 datingBtn.addEventListener("click", handleDatingClick)
 engagedBtn.addEventListener("click", handleEngagedClick)

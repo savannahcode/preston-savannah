@@ -30,7 +30,7 @@ header {
 /*----------- NAVIGATION --------------*/
 #myNav {
   background-color: transparent;
-  height: 5rem;
+  height: 6rem;
   width: 100%; /* Reset width for larger viewports */
   display: flex;
   align-items: center; /* Add this line */
@@ -55,7 +55,7 @@ nav {
           text-decoration: none;
           font-size: 2.25rem;
           text-align: center;
-          //padding: 0;
+          padding: 0 1.2rem;
         }
       }
       
@@ -65,7 +65,8 @@ nav {
     position: relative;
     width: auto;
     overflow-x: auto;
-    background-color: transparent;    }
+    background-color: transparent;    
+  }
     .overlay a:hover,
   .overlay a:focus {
     color: rgb(255, 251, 195);
