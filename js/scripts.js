@@ -137,20 +137,21 @@ bridalsBtn.addEventListener("click", handleBridalsClick)
 weddingBtn.addEventListener("click", handleWeddingClick)
 allPhotosBtn.addEventListener("click", handleAllPhotosClick)
 
+// used https://bulkresizephotos.com/en to resize all photos to 35%
 function handleDatingClick() {
   photosDisplay.innerHTML = ""
-  for (let index = 1; index <= 112; index++) {
+  for (let index = 1; index <= 118; index++) {
     let newImg = document.createElement("img")
-    newImg.src = `images/earlyDating/earlyDating${index}.jpeg`
+    newImg.src = `images/earlyDating/earlyDating${index}.jpg`
     photosDisplay.appendChild(newImg)
   }
 }
 
 function handleEngagedClick() {
   photosDisplay.innerHTML = ""
-  for (let index = 1; index <= 112; index++) {
+  for (let index = 1; index <= 95; index++) {
     let newImg = document.createElement("img")
-    newImg.src = `images/engagedDating/engagedDating${index}.jpeg`
+    newImg.src = `images/engagedDating/engagedDating${index}.jpg`
     photosDisplay.appendChild(newImg)
   }
 }
