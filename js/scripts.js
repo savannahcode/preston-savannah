@@ -118,8 +118,6 @@ if (isSafari) {
   vertical1.style.letterSpacing = "-.5rem" // Adjust this value for Safari
   vertical2.style.letterSpacing = "-.5rem"
   vertical3.style.letterSpacing = "-.5rem"
-} else {
-  element.style.letterSpacing = "-2.5rem" // Adjust this value for other browsers
 }
 
 // photosBtns

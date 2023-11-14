@@ -431,7 +431,7 @@ Scroll to top button from: https://www.w3schools.com/howto/howto_js_scroll_to_to
     /* For older Safari versions */
     letter-spacing: -2.5rem;
     position: absolute;
-    top: 67%;
+    top: 75%;
     right: 0; }
   main .verticalMonth {
     text-orientation: upright;
@@ -673,21 +673,20 @@ footer {
   /*----------- MAIN --------------*/
   main .verticalNumDate {
     letter-spacing: -3rem;
-    bottom: 0;
     right: 0;
-    top: auto;
-    font-size: 3.5rem; }
+    top: 75%;
+    font-size: 3rem; }
   main .verticalMonth {
     letter-spacing: -3rem;
     top: 17%;
     right: 0;
-    font-size: 3.5rem; }
+    font-size: 3rem; }
   main .verticalYear {
     letter-spacing: -2rem;
     top: auto;
     bottom: 0;
     left: 0;
-    font-size: 3.5rem; }
+    font-size: 3.2rem; }
   main .circle {
     position: relative;
     width: 30rem;
