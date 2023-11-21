@@ -576,7 +576,9 @@ Scroll to top button from: https://www.w3schools.com/howto/howto_js_scroll_to_to
       max-width: 30rem;
       margin: auto;
       margin-top: 2rem;
-      padding: .6rem 2rem; }
+      padding: .6rem 2rem;
+      border: #ffffff solid 3px;
+      border-radius: 10px; }
       main .contentPage .itinerary h2 {
         margin: 0 0 .7rem 0;
         font-size: 2.5rem; }
