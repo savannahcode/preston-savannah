@@ -592,6 +592,12 @@ Scroll to top button from: https://www.w3schools.com/howto/howto_js_scroll_to_to
         text-decoration-thickness: .05rem;
         line-height: 2.5rem;
         text-underline-offset: .3rem; }
+      main .contentPage .itinerary .guestActivites {
+        margin: 1rem; }
+        main .contentPage .itinerary .guestActivites h4 {
+          margin-bottom: 0; }
+        main .contentPage .itinerary .guestActivites li {
+          font-size: 1.2rem; }
     main .contentPage .stories {
       margin: 2rem 1rem;
       text-align: left; }
