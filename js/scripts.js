@@ -129,63 +129,93 @@ let weddingBtn = document.querySelector(".wedding")
 let allPhotosBtn = document.querySelector(".all")
 let photosDisplay = document.querySelector(".photosDisplay")
 
-datingBtn.addEventListener("click", handleDatingClick)
-engagedBtn.addEventListener("click", handleEngagedClick)
-bridalsBtn.addEventListener("click", handleBridalsClick)
-engagementBtn.addEventListener("click", handleEngagementClick)
-bridalsBtn.addEventListener("click", handleBridalsClick)
-weddingBtn.addEventListener("click", handleWeddingClick)
-allPhotosBtn.addEventListener("click", handleAllPhotosClick)
+if (
+  datingBtn &&
+  engagedBtn &&
+  engagementBtn &&
+  bridalsBtn &&
+  weddingBtn &&
+  allPhotosBtn &&
+  photosDisplay
+) {
+  datingBtn.addEventListener("click", handleDatingClick)
+  engagedBtn.addEventListener("click", handleEngagedClick)
+  bridalsBtn.addEventListener("click", handleBridalsClick)
+  engagementBtn.addEventListener("click", handleEngagementClick)
+  bridalsBtn.addEventListener("click", handleBridalsClick)
+  weddingBtn.addEventListener("click", handleWeddingClick)
+  allPhotosBtn.addEventListener("click", handleAllPhotosClick)
 
-// used https://bulkresizephotos.com/en to resize all photos to 35%
-function handleDatingClick() {
-  photosDisplay.innerHTML = ""
-  for (let index = 1; index <= 118; index++) {
-    let newImg = document.createElement("img")
-    newImg.src = `images/earlyDating/earlyDating${index}.jpg`
-    photosDisplay.appendChild(newImg)
+  // used https://bulkresizephotos.com/en to resize all photos to 35%
+  function handleDatingClick() {
+    photosDisplay.innerHTML = ""
+    for (let index = 1; index <= 118; index++) {
+      let newImg = document.createElement("img")
+      newImg.src = `images/earlyDating/earlyDating${index}.jpg`
+      photosDisplay.appendChild(newImg)
+    }
   }
-}
 
-function handleEngagedClick() {
-  photosDisplay.innerHTML = ""
-  for (let index = 1; index <= 104; index++) {
-    let newImg = document.createElement("img")
-    newImg.src = `images/engagedDating/engagedDating${index}.jpg`
-    photosDisplay.appendChild(newImg)
+  function handleEngagedClick() {
+    photosDisplay.innerHTML = ""
+    for (let index = 1; index <= 104; index++) {
+      let newImg = document.createElement("img")
+      newImg.src = `images/engagedDating/engagedDating${index}.jpg`
+      photosDisplay.appendChild(newImg)
+    }
   }
-}
 
-function handleEngagementClick() {
-  photosDisplay.innerHTML = ""
-  for (let index = 1; index <= 112; index++) {
-    let newImg = document.createElement("img")
-    newImg.src = `images/Engagements/Savannah+Preston_engagements-${index}.jpg`
-    photosDisplay.appendChild(newImg)
+  function handleEngagementClick() {
+    photosDisplay.innerHTML = ""
+    for (let index = 1; index <= 112; index++) {
+      let newImg = document.createElement("img")
+      newImg.src = `images/Engagements/Savannah+Preston_engagements-${index}.jpg`
+      photosDisplay.appendChild(newImg)
+    }
   }
-}
 
-function handleBridalsClick() {
-  photosDisplay.innerHTML = ""
-  for (let index = 1; index <= 140; index++) {
-    let newImg = document.createElement("img")
-    newImg.src = `images/Bridals/PrestoSavBridals${index}.jpg`
-    photosDisplay.appendChild(newImg)
+  function handleBridalsClick() {
+    photosDisplay.innerHTML = ""
+    for (let index = 1; index <= 140; index++) {
+      let newImg = document.createElement("img")
+      newImg.src = `images/Bridals/PrestoSavBridals${index}.jpg`
+      photosDisplay.appendChild(newImg)
+    }
   }
-}
 
-function handleWeddingClick() {
-  photosDisplay.innerHTML = ""
-  let message = document.createElement("h2")
-  message.textContent =
-    "Sorry! We don't have the Wedding pictures available yet, especially since the wedding doesn't take place till 12/16/2023. Please check back later."
-  photosDisplay.appendChild(message)
-}
+  function handleWeddingClick() {
+    photosDisplay.innerHTML = ""
+    let message = document.createElement("h2")
+    message.textContent =
+      "Sorry! We don't have the Wedding pictures available yet, especially since the wedding doesn't take place till 12/16/2023. Please check back later."
+    photosDisplay.appendChild(message)
+  }
 
-function handleAllPhotosClick() {
-  photosDisplay.innerHTML = ""
-  handleDatingClick()
-  handleEngagedClick()
-  handleEngagementClick()
-  handleBridalsClick()
+  function handleAllPhotosClick() {
+    photosDisplay.innerHTML = ""
+    // early dating
+    for (let index = 1; index <= 118; index++) {
+      let newImg = document.createElement("img")
+      newImg.src = `images/earlyDating/earlyDating${index}.jpg`
+      photosDisplay.appendChild(newImg)
+    }
+    // engaged dating
+    for (let index = 1; index <= 104; index++) {
+      let newImg = document.createElement("img")
+      newImg.src = `images/engagedDating/engagedDating${index}.jpg`
+      photosDisplay.appendChild(newImg)
+    }
+    // engagements
+    for (let index = 1; index <= 112; index++) {
+      let newImg = document.createElement("img")
+      newImg.src = `images/Engagements/Savannah+Preston_engagements-${index}.jpg`
+      photosDisplay.appendChild(newImg)
+    }
+    // bridals
+    for (let index = 1; index <= 140; index++) {
+      let newImg = document.createElement("img")
+      newImg.src = `images/Bridals/PrestoSavBridals${index}.jpg`
+      photosDisplay.appendChild(newImg)
+    }
+  }
 }
