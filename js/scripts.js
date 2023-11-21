@@ -114,7 +114,7 @@ const vertical2 = document.querySelector(".verticalMonth")
 const vertical3 = document.querySelector(".verticalNumDate")
 
 // Apply letter spacing based on the detected browser
-if (isSafari) {
+if (isSafari && vertical1 && vertical2 && vertical3) {
   vertical1.style.letterSpacing = "-.5rem" // Adjust this value for Safari
   vertical2.style.letterSpacing = "-.5rem"
   vertical3.style.letterSpacing = "-.5rem"
@@ -149,7 +149,7 @@ function handleDatingClick() {
 
 function handleEngagedClick() {
   photosDisplay.innerHTML = ""
-  for (let index = 1; index <= 95; index++) {
+  for (let index = 1; index <= 104; index++) {
     let newImg = document.createElement("img")
     newImg.src = `images/engagedDating/engagedDating${index}.jpg`
     photosDisplay.appendChild(newImg)
